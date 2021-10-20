@@ -6,10 +6,10 @@ main : $(objects)
 	make clean
 
 BST.o:
-	clang++ -c -std=c++17 -o BST.o BST.hpp
+	clang++ -c -g -std=c++17 -o BST.o BST.hpp
 
 main.o:
-	clang++ -c -std=c++17 -o main.o main.cpp
+	clang++ -c -g -std=c++17 -o main.o main.cpp
 
 .PHONY : clean
 clean :
